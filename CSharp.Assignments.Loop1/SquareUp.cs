@@ -14,6 +14,11 @@ namespace CSharp.Assignments.Loop1
         public static void Main()
         {
             // Write your codes here
+            for (int counter = 1; counter <= 10; counter++)
+            {
+                Console.WriteLine(counter * counter);
+            }
+            Console.ReadLine();
         }
     }
 }

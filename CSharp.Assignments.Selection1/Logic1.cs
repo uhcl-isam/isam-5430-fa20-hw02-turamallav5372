@@ -14,8 +14,33 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool CigarParty(int cigars, bool isWeekend)
         {
-            throw new NotImplementedException();
-        }
+          
+        
+
+            NotImplementedException();
+            if (isWeekend == false)
+            {
+                if(cigars >= 40 && cigars <= 60)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                if(cigars >= 40)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        
 
         /// <summary>
         /// You are driving a little too fast, and a police officer stops you.Write code to compute the result, encoded as an int value: 0=no ticket, 1=small ticket, 2=big ticket. If speed is 60 or less, the result is 0. If speed is between 61 and 80 inclusive, the result is 1. If speed is 81 or more, the result is 2. Unless it is your birthday -- on that day, your speed can be 5 higher in all cases.
@@ -25,7 +50,27 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static int CaughtSpeeding(int speed, bool birthday)
         {
-            throw new NotImplementedException();
+                if (birthday == false)
+                {
+                    if (speed <= 60)
+                        return 0;
+                    else if (speed >= 61 && speed <= 80)
+                        return 1;
+                    else if (speed >= 81)
+                        return 2;
+                     
+                }
+                else
+                {
+                    if (speed <= 65)
+                        return 0;
+                    else if (speed >= 66 && speed <= 85)
+                        return 1;
+                    else if (speed >= 86)
+                        return 2;
+               
+                }
+                return 0;
         }
 
         /// <summary>
@@ -36,17 +81,44 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool Love6(int a, int b)
         {
-            throw new NotImplementedException();
+                if (a == 6 || b == 6)
+                {
+                    return true;
+                }
+                else if (a + b == 6)
+                    return true;
+                else if (a - b == 6 || b - a == 6)
+                    return true;
+                else
+                    return false;
         }
 
-        /// <summary>
-        /// Return true if the given non-negative number is 1 or 2 more than a multiple of 20.
-        /// </summary>
-        /// <param name="num"></param>
-        /// <returns></returns>
-        public static bool More20(int num)
+            /// <summary>
+            /// Return true if the given non-negative number is 1 or 2 more than a multiple of 20.
+            /// </summary>
+            /// <param name="num"></param>
+            /// <returns></returns>
+            public static bool More20(int num)
         {
-            throw new NotImplementedException();
+                if (num > 0)
+                {
+                    if ((num-1) % 20 == 0)
+                    {
+                        return true;
+                    }
+                    else if ((num-2) % 20 == 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
         }
 
         /// <summary>
@@ -56,7 +128,19 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static bool NearTen(int num)
         {
-            throw new NotImplementedException();
+                //throw new NotImplementedException();
+
+                if ((num - 1) % 10 == 0)
+                    return true;
+                else if ((num - 2) % 10 == 0)
+                    return true;
+                if ((num + 1) % 10 == 0)
+                    return true;
+                else if ((num + 2) % 10 == 0)
+                    return true;
+                else if ((num) % 10 == 0)
+                    return true;
+                return false;
         }
 
         /// <summary>
@@ -67,7 +151,17 @@ namespace CSharp.Assignments.Loop1
         /// <returns></returns>
         public static int TeaParty(int tea, int candy)
         {
-            throw new NotImplementedException();
+                //throw new NotImplementedException();
+
+                if (tea < 5 || candy < 5)
+                    return 0;
+                else if (tea >= 5 && candy >= 5)
+                    return 1;
+                else if (candy * 2 == tea || tea * 2 == candy)
+                    return 2;
+                else
+                    return 0;
+
         }
 
         /// <summary>
